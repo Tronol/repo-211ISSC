@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 8</title>
+
+        <style>
+            body{
+                margin: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            ul{list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 25%;
+            background-color: white;
+            position: fixed;
+            height: 100%;
+            overflow: auto;}
+            li a{
+                display: block;
+                color: black;
+                padding: 8px 16px;
+            }
+            li a.active{
+                background-color: blue;
+                color: white;
+            }
+            li a:hover:not(active){ /* cuando pases por arriba cambia color*/
+                background-color: gray;
+                color:white;
+            }
+            #home{
+                background-color: rgb(66, 223, 149);
+                margin-left: 25%;
+                height: 1000px;
+                padding: 25px; /*Espacio al rededor*/
+                border:10px solid rgb(168, 16, 199);
+            }
+            #news{
+                background-color: rgb(17, 170, 190);
+                margin-left: 25%;
+                height: 1000px;
+                padding: 25px; /*Espacio al rededor*/
+                border:10px solid rgb(168, 16, 199);
+            }
+            #contact{
+                background-color: rgb(183, 57, 221);
+                margin-left: 25%;
+                height: 1000px;
+                padding: 25px; /*Espacio al rededor*/
+                border:10px solid rgb(168, 16, 199);
+            }
+            #about{
+                background-color: rgb(57, 221, 166);
+                margin-left: 25%;
+                height: 1000px;
+                padding: 25px; /*Espacio al rededor*/
+                border:10px solid rgb(168, 16, 199);
+            }
+        </style>
+
+</head>
+<body>
+    <ul>
+        <li>
+            <a href="#home">
+            Inicio
+            </a>
+        </li>
+        <li>
+            <a href="#news">
+            Noticias
+            </a>
+        </li>
+        <li>
+            <a href="#contact">
+            Contacto
+            </a>
+        </li>        
+        <li>
+            <a href="#about">
+            Acerca de
+            </a>
+        </li>
+    </ul>
+
+    <div id="home">
+    <h2>Titulo</h2>
+    <h3>Subtitulo</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse delectus, nemo qui fuga saepe dolores doloremque odio nulla error ea odit itaque id nam, culpa necessitatibus dolore architecto enim repellat?</p>
+
+    </div>
+
+    <div id="news">
+        <h2>Titulo noticias</h2>
+        <h3>Subtitulo</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse delectus, nemo qui fuga saepe dolores doloremque odio nulla error ea odit itaque id nam, culpa necessitatibus dolore architecto enim repellat?</p>
+    
+        </div>
+
+        <div id="contact">
+            <h2>Contacto</h2>
+            <h3>Subtitulo</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse delectus, nemo qui fuga saepe dolores doloremque odio nulla error ea odit itaque id nam, culpa necessitatibus dolore architecto enim repellat?</p>
+        
+            </div>
+            <div id="about">
+                <h2>Sobre</h2>
+                <h3>Subtitulo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse delectus, nemo qui fuga saepe dolores doloremque odio nulla error ea odit itaque id nam, culpa necessitatibus dolore architecto enim repellat?</p>
+            
+                </div>
+</body>
+</html>
