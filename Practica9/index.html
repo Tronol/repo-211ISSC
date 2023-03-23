@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaciones</title>
+    <style>
+        body{
+            animation: colores 1.8s infinite;
+        }
+        @keyframes colores {
+            0% {
+                background-color: rgb(13, 158, 194);
+            }
+            25%{
+                background-color: rgb(11, 59, 192);
+            }
+            50%{
+                background-color: rgb(96, 10, 131);
+            }
+            75%{
+                background-color: rgb(160, 22, 165);
+            }
+            100%{
+                background-color: rgb(165, 22, 65);
+            }
+
+           
+        }
+        h1{
+                text-align: center;
+                padding-top: 250px;
+                font-family: 'Times New Roman', Times, serif;
+                color: rgb(0, 0, 0);
+            }
+
+        .cuadroBlanco{
+            background: white;
+            position: absolute;
+            animation: muevecuadro 1s infinite;
+
+        }
+        @keyframes muevecuadro {
+            from{
+                top:0px
+            }
+            to{
+                top: 200px;
+            }
+        }
+        #cuadroblanco1{
+            width: 100px;
+            height: 100px;
+            left: 50px;
+        }
+        #cuadroblanco2{
+            width: 100px;
+            height: 100px;
+            left: 200px;
+        }
+        #cuadroRojo{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            left: 350px;
+            animation: mueverojo 3s infinite;
+        }
+        @keyframes mueverojo {  /*animacion */
+            0%{
+                top: 0px;
+            }
+            25%{
+                top: 200px;
+                width: 400px; /*modifica el tamaño de ese*/
+                border: 10px solid red;
+                background-color: yellow;
+            }
+            50%{
+                top: 50px;
+
+            }
+            100%{
+                top: 100px;
+            }
+        }
+        #cuadroMulticolor{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            left: 500px;
+            animation: movermulti 5s infinite;
+            }
+        @keyframes movermulti {
+            0%{
+                top: 0px; left: 500px;  background-color: red;
+            }
+            10%{
+                top: 0px; left: 500px;  background-color: rgb(255, 153, 0);
+            }
+            20%{
+                top: 0px; left: 500px;  background-color: rgb(251, 255, 0);
+            }
+            30%{
+                top: 0px; left: 500px;  background-color: rgb(72, 255, 0);
+            }
+            40%{
+                top: 0px; left: 500px;  background-color: rgb(24, 219, 210);
+            }
+            50%{
+                top: 0px; left: 500px;  background-color: rgb(0, 132, 255);
+            }
+            60%{
+                top: 0px; left: 500px;  background-color: rgb(4, 0, 255);
+            }
+            70%{
+                top: 0px; left: 500px;  background-color: rgb(109, 9, 223);
+            }
+            80%{
+                top: 0px; left: 500px;  background-color: rgb(247, 0, 255);
+            }
+            90%{
+                top: 0px; left: 500px;  background-color: rgb(255, 0, 140);
+            }
+            100%{
+                top: 0px; left: 500px;  background-color: rgb(173, 11, 73);
+            }
+            
+        }
+        #circulo{
+            width: 100px;
+            height: 100px;
+            left: 800px;
+            background-color: rgba(204, 70, 37, 0);
+            position: absolute;
+            border-radius: 50%;
+            animation: crece 1.8s infinite;
+            border: 5px solid black;
+        }
+        @keyframes crece {
+            0%{
+                top: 0px; width: 100px; height: 100px;
+            }
+            100%{
+                top: 200px; width: 200px; height: 200px;
+            }
+        }
+        .gradiente{
+            background-color: red;
+            width: 300px;
+            height: 300px;
+            padding: 200px;
+            background: rgb(131,58,180);        /* Gradient css generator*/
+            background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+        }
+    </style>
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <h1 data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine">Animaciones</h1>
+    <div id="cuadroblanco1" class="cuadroBlanco"><p>1</p></div>
+    <div id="cuadroblanco2" class="cuadroBlanco"><p>2</p></div>
+    <div id="cuadroRojo"></div>
+    <div id="cuadroMulticolor"></div>
+    <div id="circulo"></div>
+    <div class="gradiente"></div>
+    
+
+    <!--https://michalsnik.github.io/aos/ --> <!--animaciones cosas-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body> 
+
+</html>
